@@ -1,0 +1,46 @@
+.TH my_script 1 "2024-07-22" "Version 1.0" "utility man page"
+.SH NAME
+my_script \- A script to generate UUIDs and summarise directories
+.SH SYNOPSIS
+.B my_script
+.RI [-1|-4|-g|-p]
+.SH DESCRIPTION
+This script generates UUIDs, summarizes directory contents, and logs user actions.
+.SH OPTIONS
+.TP
+.B \-1
+Generate a UUID version 1 and save it to the file.
+.TP
+.B \-4
+Generate a UUID version 4 and save it to the file.
+.TP
+.B \-p
+Print the last generated UUID.
+.TP
+.B \-g
+Generate a report for each subdirectory in the specified directory.
+.SH EXAMPLES
+.PP
+Generate a UUID version 1:
+.RS
+.B my_script -1
+.RE
+.PP
+Generate a UUID version 4:
+.RS
+.B my_script -4
+.RE
+.PP
+Print the last generated UUID:
+.RS
+.B my_script -p
+.RE
+.PP
+Generate a report for each subdirectory:
+.RS
+.B my_script -g
+.RE
+.SH AUTHOR
+Cassandra
+.SH "SEE ALSO"
+uuidgen(1), awk(1), find(1), openssl(1), stat(1)
